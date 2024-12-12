@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* ----common */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        "Noto Sans JP",
+        Arial,
+        serif;
+    font-style: normal;
+    color: #000;
+    background-color :#fff;
+    background-image: url(../backgroundimg.jpeg);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.logo {
+    padding: 120px 0;
+    opacity: 0;
+    animation: fadeIn 4s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.topic {
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.slider {
+    margin-top: 20px;
+}
+
+.workImg {
+    position: relative;
+    overflow: hidden;
+}
+
+.mask {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    opacity: 0;	/* マスクを表示しない */
+    background-color:rgba(0,0,0,0.6);
+    -webkit-transition:	all 0.6s ease;
+    transition:	all 0.6s ease;
+}
+
+.caption {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 200;
+    text-align: left;
+    padding: 30% 0 0 40px;
+}
+
+.workImg:hover .mask {
+    opacity: 1;
+}
+
+.workImg2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.mask2 {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    opacity: 0;	/* マスクを表示しない */
+    background-color:rgba(0,0,0,0.6);
+    -webkit-transition:	all 0.6s ease;
+    transition:	all 0.6s ease;
+}
+
+.caption2 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 200;
+    text-align: left;
+    padding: 30% 0 0 40px;
+}
+
+.workImg2:hover .mask2 {
+    opacity: 1;
+}
+
+
+
+
+.work1__txt,
+.work2__txt {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.contact {
+    padding: 120px 0;
+}
+
+.contact__txt {
+    width: 230px;
+    margin: 20px auto;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.copy {
+    background-color: #141414;
+    color: #fff;
+    padding: 14px;
+    text-align: center;
+}
+
+
+@media screen and (min-width:769px) {
+    img {
+        width: 80%;
+        height: auto;
+    }
+    
+    
+    .logo {
+        padding: 120px 0;
+    }
+    
+    .topic {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .slider {
+        margin-top: 20px;
+    }
+
+    .workImg {
+        width: 80%;
+        text-align: -webkit-center;
+    }
+    
+    .work1__txt,
+    .work2__txt {
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 14px;
+    }
+    
+    .contact {
+        padding: 120px 0;
+    }
+    
+    .contact__txt {
+        width: 290px;
+        margin: 20px auto;
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-align: left;
+    }
+    
+    .copy {
+        background-color: #141414;
+        color: #fff;
+        padding: 14px;
+        text-align: center;
+    }
+}
+
